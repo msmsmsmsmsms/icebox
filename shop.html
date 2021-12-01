@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet">
+    <link href="menu.css" rel="stylesheet">
+    <link href="burger.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <link href="shop.css" rel="stylesheet">
+
+
+    <title>shop | ice box</title>
+</head>
+
+<body>
+    
+    <!-- Меню -->
+
+    <div id="menu">
+        <div id="logo"><a href="home.html">ice box.</a></div>
+        <div class="block">
+            <ul id="nav">
+                <li><a href="shop.html"><div id="shop">shop</div></a></li>
+                <li><a href="about.html"><div id="cart">about</div></a></li>
+                <li><a href="contacts.html"><div id="contacts">contacts</div></a></li>
+            </ul>
+            <button class="burger" id="burger" onclick="ToggleMenu()">
+               <div class="line"></div>
+            </button>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div id="product-container">
+
+        
+            <a href ="product.html">
+                <div id="product">
+                    <div id="photo">
+                        <img src="ice-cream-photo/vanila_crush.jpg">
+                    </div>
+                    <div id="name">
+                        vanilla crush
+                    </div>
+                </div>
+            </a>
+            <div id="product">  
+                <div id="photo">
+
+                </div>
+                <div id="name">
+                    ice-cream 2
+                </div>
+            </div>
+            <div id="product">
+                <div id="photo">
+
+                </div>
+                <div id="name">
+                    ice-cream 3
+                </div>
+            </div>
+            <div id="product">
+                <div id="photo">
+
+                </div>
+                <div id="name">
+                    ice-cream 4
+                </div>
+            </div>
+        
+            <div id="product">
+                <div id="photo">
+
+                </div>
+                <div id="name">
+                    ice-cream 5
+                </div>
+            </div>
+            <div id="product">
+                <div id="photo">
+
+                </div>
+                <div id="name">
+                    ice-cream 6
+                </div>
+            </div>
+            <div id="product">
+                <div id="photo">
+
+                </div>
+                <div id="name">
+                    ice-cream 7
+                </div>
+            </div>
+            <div id="product">
+                <div id="photo">
+
+                </div>
+                <div id="name">
+                    ice-cream 8
+                </div>
+            </div>
+
+            <div id="product">
+                <div id="photo">
+
+                </div>
+                <div id="name">
+                    ice-cream 9
+                </div>
+            </div>
+            <div id="product">
+                <div id="photo">
+
+                </div>
+                <div id="name">
+                    ice-cream 10
+                </div>
+            </div>
+            <div id="product">
+                <div id="photo">
+
+                </div>
+                <div id="name">
+                    ice-cream 11
+                </div>
+            </div>
+            <div id="product">
+                <div id="photo">
+
+                </div>
+                <div id="name">
+                    ice-cream 12
+                </div>
+            </div>
+        </div>
+
+    <footer>
+            <div id="author">
+                website by mathew shuvalov-luzhin.
+            </div>
+            <div id="link-container">
+                <div id="link">
+                    <img src="link-photo/vk.png">
+                </div>
+                <div id="link">
+                    <img src="link-photo/tg.png">
+                </div>
+                <div id="link">
+                    <img src="link-photo/inst.png">
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            function ToggleMenu(){
+                const button = document.getElementById('burger')
+                const menu = document.getElementById('nav')
+    
+                button.classList.toggle('active')
+                menu.classList.toggle('active')
+            }
+        </script>
+
+</body>
+</html>
