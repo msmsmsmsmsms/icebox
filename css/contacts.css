@@ -1,0 +1,31 @@
+#map {
+    margin: 5vw 5vw;
+}
+
+iframe {
+    height: 28vw;
+}
+
+div#title {
+    font-size: 3.5vw;
+    margin-bottom: 1vw;
+}
+
+#social-container {
+    font-size: 3.5vw;
+    margin: 5vw 5vw;
+    margin-bottom: 5vw;
+}
+
+#social-networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#social-icon, #social-icon-tel {
+    width: 11vw;
+    height: 11vw;
+    background-color:#87E8DC;
+    text-align: center;
+}

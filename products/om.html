@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../link-photo/favicon.ico">
+
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/menu.css" rel="stylesheet">
+    <link href="../css/burger.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../adapt/menuadapt.css" rel="stylesheet">      
+    <link href="../adapt/burgeradapt.css" rel="stylesheet">
+    <link href="../adapt/footeradapt.css" rel="stylesheet">
+    
+    <link href="../css/product.css" rel="stylesheet">
+    <link href="../adapt/productadapt.css" rel="stylesheet">
+
+    <title>oreo milkshake | ice-box</title>
+</head>
+<body>
+
+    <!-- Меню -->
+
+    <div id="menu">
+        <div id="logo"><a href="../index.html">ice box.</a></div>
+        <div class="block">
+            <ul id="nav">
+                <li><a href="../shop.html"><div id="shop">shop</div></a></li>
+                <li><a href="../about.html"><div id="cart">about</div></a></li>
+                <li><a href="../contacts.html"><div id="contacts">contacts</div></a></li>
+            </ul>
+            <button class="burger" id="burger" onclick="ToggleMenu()">
+               <div class="line"></div>
+            </button>
+        </div>
+    </div>
+    
+    <div id="purchase-container">
+        <div id="productpage-photo">
+            <img src="../ice-cream-photo/orep_milkshake.jpg">
+        </div>
+
+        <div id="purchase">
+            <div id="purchase-name">
+                oreo milkshake
+                <div id="price">
+                    1.99$
+                </div>
+            </div>
+
+            <div id="buy">
+                buy it!
+            </div>  
+        </div>
+    </div>
+
+    <div class="fakeline"></div>
+
+    <div class="details">
+        <h1>Details</h1>
+        of course we couldn't pass through our friends - oreo. our tasty vannila ice-cream with oreo cookies in a soft horn -  is the best way to make any sweet tooth really happy, even if he tried a lot of different sweets. 
+    </div>
+   
+    <footer>
+        <div id="author">
+            website by mathew shuvalov-luzhin.
+        </div>
+        <div id="link-container">
+            <a href="https://vk.com/matveyshuv" target="blank">
+            <div id="link">
+                <img src="../link-photo/vk.png">
+            </div>
+            </a>
+            <a href="https://t.me/matveyshuvalov" target="blank">
+            <div id="link">
+                <img src="../link-photo/tg.png">
+            </div>
+            </a>
+            <a href="https://www.instagram.com/matveyshuvalov/" target="blank">
+            <div id="link">
+                <img src="../link-photo/inst.png">
+            </div>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function ToggleMenu(){
+            const button = document.getElementById('burger')
+            const menu = document.getElementById('nav')
+
+            button.classList.toggle('active')
+            menu.classList.toggle('active')
+        }
+
+    </script>
+
+</body>
+</html>

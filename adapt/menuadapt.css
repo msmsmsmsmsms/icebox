@@ -1,0 +1,35 @@
+@media screen and (max-width:800px) {
+    div#menu {
+        height: 13vw;
+    }
+    
+    div#logo {
+        font-size: 7vw;
+    }
+
+    ul#nav div {
+        font-size: 3vw  ;
+    }
+
+    .block {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width:440px) {
+    div#menu {
+        height: 20vw;
+    }
+    
+    div#logo {
+        font-size: 8vw;
+    }
+
+    ul#nav div {
+        font-size: 5vw  ;
+    }
+
+    .block {
+        width: 60%;
+    }
+}

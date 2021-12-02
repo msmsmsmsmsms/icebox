@@ -1,0 +1,23 @@
+@media screen and (max-width:800px) {
+    .text {
+        margin: 5vw;
+        font-size: 2.5vw;
+    }
+
+    span {
+        font-size: 3.75vw;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .text {
+        margin: 5vw;
+        font-size: 4.5vw;
+    }
+
+    span {
+        font-size: 6vw;
+        white-space: auto;
+    }
+}

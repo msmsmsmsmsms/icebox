@@ -1,0 +1,106 @@
+.container {
+    margin: 5vw;
+    margin-top: 0;
+}
+
+.content-left, .content-right {
+    display: flex;
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+}
+
+.content-left {
+    justify-content: left;
+}
+
+#r {
+    text-align: right;
+}
+
+.content-right {
+    justify-content: right;
+    flex-direction: row-reverse;
+}
+
+.text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+}
+
+#f {
+    background: url(../ice-cream-photo/pexels-galileo-giglio-5535554.jpg) center;
+    background-size: 200%;
+}
+
+#s {
+    background: url(../ice-cream-photo//pexels-solodsha-8106505.jpg) center;
+    background-size: 100%;
+}
+
+#t {
+    background: url(../ice-cream-photo//pexels-rodnae-productions-6413700.jpg) center;
+    background-size: 200%;
+}
+
+.text {
+    margin-top: 5vw;
+    margin-bottom: 0vw;
+    padding: 1vw 3vw;
+    position: relative;
+    width: 60%;
+    height: 35vw;
+
+}
+
+.aside {
+    font-size: 2vw;
+    margin-top: 10vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.inner {
+    font-size: 2vw;
+    z-index: 2;
+    position: relative;
+}
+
+.inner > h1 {
+    font-size: 5vw;
+    z-index: 2;
+    color: #000;
+}
+
+span {
+    background: linear-gradient(90deg, #fff 40%, #000 40%, #000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    right: -25vw;
+    top: 15vw;
+    font-size: 12vw;
+}
+
+.photo {
+    width: 37.5vw;
+    height: 37.5vw;
+    margin-right: 5vw;
+}
+
+.photo > img {  
+    width: 100%;
+    object-fit: cover;
+}
+
+.content-left.show, .content-right.show{
+    opacity: 1;
+    transition: 1.75s;
+}

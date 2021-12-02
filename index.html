@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="link-photo/favicon.ico">
+
+    <title>home | ice-box.</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/burger.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="adapt/menuadapt.css" rel="stylesheet">      
+    <link href="adapt/burgeradapt.css" rel="stylesheet">
+    <link href="adapt/footeradapt.css" rel="stylesheet">
+    
+    <link href="css/home.css" rel="stylesheet">
+    <link href="adapt/homeadapt.css" rel="stylesheet">
+    
+
+</head>
+<body>
+    
+        <!-- Меню -->
+
+        <div id="menu">
+            <div id="logo"><a href="index.html">ice box.</a></div>
+            <div class="block">
+                <ul id="nav">
+                    <li><a href="shop.html"><div id="shop">shop</div></a></li>
+                    <li><a href="about.html"><div id="cart">about</div></a></li>
+                    <li><a href="contacts.html"><div id="contacts">contacts</div></a></li>
+                </ul>
+                <button class="burger" id="burger" onclick="ToggleMenu()">
+                   <div class="line"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="content-left">
+                <div class="text" id="f">
+                    <div class="inner">
+                        <h1>ice box. 
+                        <br> 
+                        the best ice-cream store.
+                        </h1>
+                        since 2020.
+                    </div>
+                </div>
+                <div class="aside">
+                    the first foreign ice-cream shop in russia<br><br>
+                    there is no other shop which sells foreign ice-cream
+                </div>
+            </div>
+    
+            <div class="content-right">
+                <div class="text" id="s">
+                    <div class="inner" id="r">
+                        <h1>the best quality.
+                        <br> 
+                        straight from usa and europe.
+                        </h1>
+                        all the production is original. 
+                    </div>
+                </div>
+                <div class="aside" id="aside2">
+                    we work only with official dealers of ice-cream brands.<br><br>
+                    so the quality of our product is the best in russia
+                </div>
+            </div>
+    
+            <div class="content-left">
+                <div class="text" id="t">
+                    <div class="inner">
+                        <h1>you're welcome
+                        </h1>
+                        <span>ice box.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <footer>
+            <div id="author">
+                website by mathew shuvalov-luzhin.
+            </div>
+            <div id="link-container">
+                <a href="https://vk.com/matveyshuv" target="blank">
+                <div id="link">
+                    <img src="link-photo/vk.png">
+                </div>
+                </a>
+                <a href="https://t.me/matveyshuvalov" target="blank">
+                <div id="link">
+                    <img src="link-photo/tg.png">
+                </div>
+                </a>
+                <a href="https://www.instagram.com/matveyshuvalov/" target="blank">
+                <div id="link">
+                    <img src="link-photo/inst.png">
+                </div>
+                </a>
+            </div>
+        </footer>
+
+
+        <script>
+            function ToggleMenu(){
+                const button = document.getElementById('burger')
+                const menu = document.getElementById('nav')
+    
+                button.classList.toggle('active')
+                menu.classList.toggle('active')
+            }
+
+            function onEntry(entry) {
+                entry.forEach(change => {
+                    if (change.isIntersecting) {
+                        change.target.classList.add('show');
+                        }
+                });
+            }
+            let options = { threshold: [0.5] };
+            let observer = new IntersectionObserver(onEntry, options);
+            let elements = document.querySelectorAll('.content-left, .content-right, span');
+            for (let elm of elements) {
+                 observer.observe(elm);
+                }
+        </script>
+
+
+</body>
+</html>

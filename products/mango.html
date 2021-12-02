@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../link-photo/favicon.ico">
+
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/menu.css" rel="stylesheet">
+    <link href="../css/burger.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../adapt/menuadapt.css" rel="stylesheet">      
+    <link href="../adapt/burgeradapt.css" rel="stylesheet">
+    <link href="../adapt/footeradapt.css" rel="stylesheet">
+    
+    <link href="../css/product.css" rel="stylesheet">
+    <link href="../adapt/productadapt.css" rel="stylesheet">
+
+    <title>mango | ice-box</title>
+</head>
+<body>
+
+    <!-- Меню -->
+
+    <div id="menu">
+        <div id="logo"><a href="../index.html">ice box.</a></div>
+        <div class="block">
+            <ul id="nav">
+                <li><a href="../shop.html"><div id="shop">shop</div></a></li>
+                <li><a href="../about.html"><div id="cart">about</div></a></li>
+                <li><a href="../contacts.html"><div id="contacts">contacts</div></a></li>
+            </ul>
+            <button class="burger" id="burger" onclick="ToggleMenu()">
+               <div class="line"></div>
+            </button>
+        </div>
+    </div>
+    
+    <div id="purchase-container">
+        <div id="productpage-photo">
+            <img src="../ice-cream-photo/mango.jpg">
+        </div>
+
+        <div id="purchase">
+            <div id="purchase-name">
+                mango
+                <div id="price">
+                    2.49$
+                </div>
+            </div>
+
+            <div id="buy">
+                buy it!
+            </div>  
+        </div>
+    </div>
+
+    <div class="fakeline"></div>
+
+    <div class="details">
+        <h1>Details</h1>
+        tired of the most popular flavours of ice-cream? we think that you should try something exotic. and our tropical ice-cream with mango syrop is one of exotic flavours you should defenetly try. various of sweet and sour exotic flavours in the soft horn.
+    </div>
+   
+    <footer>
+        <div id="author">
+            website by mathew shuvalov-luzhin.
+        </div>
+        <div id="link-container">
+            <a href="https://vk.com/matveyshuv" target="blank">
+            <div id="link">
+                <img src="../link-photo/vk.png">
+            </div>
+            </a>
+            <a href="https://t.me/matveyshuvalov" target="blank">
+            <div id="link">
+                <img src="../link-photo/tg.png">
+            </div>
+            </a>
+            <a href="https://www.instagram.com/matveyshuvalov/" target="blank">
+            <div id="link">
+                <img src="../link-photo/inst.png">
+            </div>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function ToggleMenu(){
+            const button = document.getElementById('burger')
+            const menu = document.getElementById('nav')
+
+            button.classList.toggle('active')
+            menu.classList.toggle('active')
+        }
+
+    </script>
+
+</body>
+</html>
