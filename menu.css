@@ -9,10 +9,14 @@
 #nav {
     transition: 0.5s;
     opacity: 0;
+    cursor: default;
+    pointer-events: none;
 }
 
 #nav.active {
     opacity: 1;
+    cursor: pointer;
+    pointer-events: auto;
 }
 
 div#menu {
@@ -27,7 +31,6 @@ div#menu {
 
 div#logo {
     font-size: 5vw;
-    line-height: 120px;
     color: #000000;
     width:fit-content;
     height: fit-content;

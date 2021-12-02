@@ -1,0 +1,23 @@
+@media screen and (max-width:800px) {
+    #photo {
+        height: 32vw;
+        width: 25vw;
+    }
+
+    #name {
+        font-size: 2.75vw;
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #photo {
+        height: 100vw;
+        width: 80vw;
+    }
+
+    #name {
+        font-size: 7.5vw;
+        width: 80vw;
+    }
+}

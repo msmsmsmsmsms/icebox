@@ -1,14 +1,3 @@
-#back {
-    background-color: #87E8DC;
-    border-radius: 20px;
-    text-align: center;
-    font-size:36px;
-    height: fit-content;
-    padding: 10px;
-    width: 535px;
-    transition-duration: 0.7s;
-}
-
 #back:hover {
     transform: scale(1.1);
 }

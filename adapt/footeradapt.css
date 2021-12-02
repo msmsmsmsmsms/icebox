@@ -1,0 +1,38 @@
+@media screen and (max-width:800px) {
+
+footer {
+    height: 13vw;
+}
+
+footer #author {
+    font-size: 2vw;
+}
+
+footer #link-container {
+    width: 18vw;
+}
+
+footer #link {
+    width: 4vw;
+}
+}
+
+@media screen and (max-width:400px) {
+
+    footer {
+        height: 20vw;
+    }
+    
+    footer #author {
+        font-size: 3.25vw;
+    }
+    
+    footer #link-container {
+        width: 30vw;
+    }
+    
+    footer #link {
+        height: 5vw;
+        width: 100%;
+    }
+}

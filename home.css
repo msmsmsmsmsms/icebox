@@ -3,11 +3,15 @@
     margin-top: 0;
 }
 
-.content-left {
+.content-left, .content-right {
+    display: flex;
     opacity: 0;
     width: 100%;
     display: flex;
     align-content: space-between;
+}
+
+.content-left {
     justify-content: left;
 }
 
@@ -16,11 +20,8 @@
 }
 
 .content-right {
-    opacity: 0;
-    width: 100%;
-    display: flex;
-    align-content: space-between;
     justify-content: right;
+    flex-direction: row-reverse;
 }
 
 .text::before {
