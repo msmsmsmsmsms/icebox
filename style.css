@@ -33,9 +33,9 @@ img {
     border-radius: 0;
 }
 
-a {
+a, a:visited, a:hover {
     color:black;
-    text-decoration: 0;
+    text-decoration: none;
 }
 
 html {
