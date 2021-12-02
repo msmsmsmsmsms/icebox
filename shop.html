@@ -175,24 +175,6 @@
                 button.classList.toggle('active')
                 menu.classList.toggle('active')
             }
-
-            function getPhoto(){
-                const images = document.querySelectorAll('img')
-                images.forEach(image => {
-                    image.addEventListener('click', e => {
-                        const img = document.createElement('img')
-                        img.src = image.src
-                            while (lightbox.firstChild){
-                            lightbox.removeChild(lightbox.firstChild)
-                            }
-                        lightbox.appendChild(img)
-                    })
-                })
-
-                lightbox.addEventListener('click', e => {
-                    if (e.target == e.currentTarget) return lightbox.classList.remove('active')
-                    })
-                }
         </script>
 
 </body>

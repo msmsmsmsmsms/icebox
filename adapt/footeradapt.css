@@ -28,11 +28,11 @@ footer #link {
     }
     
     footer #link-container {
-        width: 30vw;
+        width: 22.5vw;
     }
     
     footer #link {
-        height: 5vw;
-        width: 100%;
+        height: 6vw;
+        width: 6vw;
     }
 }
