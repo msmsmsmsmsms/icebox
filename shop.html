@@ -52,112 +52,117 @@
                     </div>
                 </div>
             </a>
-            <div id="product">  
+            <div id="product">
                 <div id="photo">
-
+                    <img src="ice-cream-photo/lily.jpg">
                 </div>
                 <div id="name">
-                    ice-cream 2
+                    lily
                 </div>
             </div>
             <div id="product">
                 <div id="photo">
-
+                    <img src="ice-cream-photo/mango.jpg">
                 </div>
                 <div id="name">
-                    ice-cream 3
-                </div>
-            </div>
-            <div id="product">
-                <div id="photo">
-
-                </div>
-                <div id="name">
-                    ice-cream 4
+                    mango
                 </div>
             </div>
         
             <div id="product">
                 <div id="photo">
-
+                    <img src="ice-cream-photo/mint_berries.jpg">
                 </div>
                 <div id="name">
-                    ice-cream 5
+                    mint and berries
                 </div>
             </div>
             <div id="product">
                 <div id="photo">
-
+                    <img src="ice-cream-photo/nut_rose.jpg">
                 </div>
                 <div id="name">
-                    ice-cream 6
+                    nut rose
                 </div>
             </div>
             <div id="product">
                 <div id="photo">
-
+                    <img src="ice-cream-photo/orep_milkshake.jpg">
                 </div>
                 <div id="name">
-                    ice-cream 7
+                    oreo milkshake
                 </div>
             </div>
             <div id="product">
                 <div id="photo">
-
+                    <img src="ice-cream-photo/pistache.jpg">
                 </div>
                 <div id="name">
-                    ice-cream 8
+                    pistache
                 </div>
             </div>
-
-            <div id="product">
+            <div id="product">  
                 <div id="photo">
-
+                    <img src="ice-cream-photo/caramel_splash.jpg">
                 </div>
                 <div id="name">
-                    ice-cream 9
-                </div>
-            </div>
-            <div id="product">
-                <div id="photo">
-
-                </div>
-                <div id="name">
-                    ice-cream 10
+                    caramel splash
                 </div>
             </div>
             <div id="product">
                 <div id="photo">
-
+                    <img src="ice-cream-photo/rainbow.jpg">
                 </div>
                 <div id="name">
-                    ice-cream 11
+                    rainbow
                 </div>
             </div>
             <div id="product">
                 <div id="photo">
-
+                    <img src="ice-cream-photo/strawberry_pie.jpg">
                 </div>
                 <div id="name">
-                    ice-cream 12
+                    strawberry pie
+                </div>
+            </div>
+            <div id="product">
+                <div id="photo">
+                    <img src="ice-cream-photo/vanilla.jpg">
+                </div>
+                <div id="name">
+                    vanilla
+                </div>
+            </div>
+            <div id="product">
+                <div id="photo">
+                    <img src="ice-cream-photo/vanilla_raspberry.jpg">
+                </div>
+                <div id="name">
+                    vanilla raspberry
                 </div>
             </div>
         </div>
 
-    <footer>
+        <footer>
             <div id="author">
                 website by mathew shuvalov-luzhin.
             </div>
             <div id="link-container">
+                <a href="https://vk.com/matveyshuv" target="blank">
                 <div id="link">
                     <img src="link-photo/vk.png">
                 </div>
+                </a>
+                <a href="https://t.me/matveyshuvalov" target="blank">
                 <div id="link">
                     <img src="link-photo/tg.png">
                 </div>
+                </a>
+                <a href="https://www.instagram.com/matveyshuvalov/" target="blank">
                 <div id="link">
                     <img src="link-photo/inst.png">
                 </div>
+                </a>
             </div>
         </footer>
 
@@ -170,6 +175,24 @@
                 button.classList.toggle('active')
                 menu.classList.toggle('active')
             }
+
+            function getPhoto(){
+                const images = document.querySelectorAll('img')
+                images.forEach(image => {
+                    image.addEventListener('click', e => {
+                        const img = document.createElement('img')
+                        img.src = image.src
+                            while (lightbox.firstChild){
+                            lightbox.removeChild(lightbox.firstChild)
+                            }
+                        lightbox.appendChild(img)
+                    })
+                })
+
+                lightbox.addEventListener('click', e => {
+                    if (e.target == e.currentTarget) return lightbox.classList.remove('active')
+                    })
+                }
         </script>
 
 </body>
